@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Replaced duplicated home UI with a single NavHost (FragmentContainerView).
+     Home UI lives in fragment_home.xml and is hosted by the navigation graph
+     (res/navigation/mobile_navigation.xml). This avoids duplicate layouts and
+     ensures `fragment_home.xml` + `HomeFragment` is the single correct source.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment_content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/mobile_navigation"
+        app:defaultNavHost="true" />
+
+</FrameLayout>

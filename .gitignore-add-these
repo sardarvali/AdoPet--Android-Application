@@ -1,0 +1,5 @@
+# Add these lines to your .gitignore
+native-lib-keys.txt
+firebase-remote-config.txt
+encrypt_keys.py
+.gitignore-add-these

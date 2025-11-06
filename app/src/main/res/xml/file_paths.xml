@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Internal storage paths - more secure and reliable -->
+    <files-path name="internal_files" path="." />
+    <cache-path name="internal_cache" path="." />
+
+    <!-- Internal images directory -->
+    <files-path name="images" path="images/" />
+    <cache-path name="temp_images" path="images/" />
+
+    <!-- For ImagePicker library - internal storage only -->
+    <files-path name="imagepicker_files" path="." />
+    <cache-path name="imagepicker_cache" path="imagepicker/" />
+</paths>
+

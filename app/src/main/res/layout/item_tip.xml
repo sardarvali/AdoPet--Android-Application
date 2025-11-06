@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardTip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header with Category Color Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/categoryColorBar"
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="@color/primary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <!-- Category Chip -->
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pet Care"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    app:chipBackgroundColor="@color/primary_light"
+                    app:chipCornerRadius="12dp"
+                    app:chipMinHeight="28dp"
+                    app:chipIcon="@drawable/ic_tips"
+                    app:chipIconSize="14dp"
+                    app:chipIconTint="@color/primary" />
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="How to Train Your Puppy"
+                    android:textColor="@color/text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="2dp" />
+
+                <!-- Content Preview -->
+                <TextView
+                    android:id="@+id/tvContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Learn essential tips and tricks for training your new puppy. This comprehensive guide covers basic commands, house training, and socialization..."
+                    android:textColor="@color/text_secondary"
+                    android:textSize="15sp"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="4dp" />
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/divider" />
+
+                <!-- Stats and Actions -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Views Count -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_search"
+                            android:contentDescription="Views"
+                            app:tint="@color/primary" />
+
+                        <TextView
+                            android:id="@+id/tvViews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="1.2K views"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <!-- Date -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_calendar"
+                            android:contentDescription="Date"
+                            app:tint="@color/info" />
+
+                        <TextView
+                            android:id="@+id/tvDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="Jan 15, 2024"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <!-- Read More Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnReadMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Read"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        app:cornerRadius="20dp"
+                        app:icon="@drawable/ic_arrow_back"
+                        app:iconGravity="end"
+                        style="@style/Widget.Material3.Button.TonalButton" />
+
+                </LinearLayout>
+
+                <!-- Admin Actions (Hidden by default) -->
+                <LinearLayout
+                    android:id="@+id/layoutAdminActions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnEdit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:text="Edit"
+                        android:textAllCaps="false"
+                        app:cornerRadius="14dp"
+                        app:icon="@drawable/ic_edit"
+                        style="@style/Widget.Material3.Button.OutlinedButton" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnDelete"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:text="Delete"
+                        android:textAllCaps="false"
+                        app:cornerRadius="14dp"
+                        app:icon="@drawable/ic_delete"
+                        style="@style/Widget.Material3.Button.OutlinedButton" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+

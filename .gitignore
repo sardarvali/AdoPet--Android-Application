@@ -1,0 +1,374 @@
+
+# ================================
+# Android Pet Adoption App
+# Comprehensive .gitignore
+# ================================
+
+# ============ CRITICAL SECURITY FILES ============
+# NEVER commit these files - they contain sensitive data
+
+# Firebase Configuration Files
+google-services.json
+app/google-services.json
+**/google-services.json
+serviceAccountKey.json
+firebase-adminsdk*.json
+
+# API Keys & Secrets
+local.properties
+gradle.properties
+*.properties
+!gradle/wrapper/gradle-wrapper.properties
+
+# Keystore Files
+*.jks
+*.keystore
+release-key.jks
+release.keystore
+keystore.properties
+
+# Environment Files
+.env
+.env.local
+.env.production
+
+# Native Library Keys
+native-lib-keys.txt
+app/src/main/cpp/native-lib-keys.txt
+
+# Encryption Keys
+**/keys/
+encrypt_keys.py
+*.key
+*.pem
+
+# ============ ANDROID BUILD FILES ============
+
+# Built application files
+*.apk
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+release/
+
+# Gradle files
+.gradle/
+build/
+app/build/
+*/build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio captures folder
+captures/
+
+# IntelliJ IDEA
+*.iml
+.idea/
+*.ipr
+*.iws
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/.name
+.idea/compiler.xml
+.idea/copyright/
+.idea/encodings.xml
+.idea/scopes/
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/datasources.xml
+.idea/dataSources.ids
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+.idea/jarRepositories.xml
+
+# Keystore files
+# Uncomment the following lines if you do not want to check your keystore files in.
+#*.jks
+#*.keystore
+
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild
+.cxx/
+
+# Google Services (e.g. APIs or Firebase)
+# Comment line below if you want to gitignore google-services.json
+google-services.json
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Version control
+vcs.xml
+
+# lint
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+lint-results*.html
+lint-results*.xml
+*.log
+
+# Android Profiling
+*.hprof
+
+# ============ NODE.JS (Firebase Functions) ============
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Firebase
+.firebase/
+.firebaserc
+firebase-debug.log
+firebase-debug.*.log
+firestore-debug.log
+ui-debug.log
+
+# ============ OPERATING SYSTEM FILES ============
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============ EDITOR/IDE SPECIFIC ============
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Eclipse
+.classpath
+.project
+.settings/
+tmp/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+
+# ============ DOCUMENTATION (Keeping only README.md) ============
+
+# Remove all other markdown documentation files
+1.indetailedanalysis.md
+2.indetailedsecuirty.md
+3.indetailedhybird.md
+ACTUAL_FIXES_TRUTH.md
+ALL_TODO_IMPLEMENTED.md
+BACKEND_ARCHITECTURE.md
+BACKEND_MIGRATION_SUMMARY.md
+BACKEND_PROJECT_STRUCTURE.md
+BRUTAL_HONEST_ANALYSIS.md
+CHANGES_COMPLETED_NOV6.md
+COMPLETE_ANALYSIS_153_FILES.md
+CRITICAL_FIXES_APPLIED.md
+CRITICAL_FIXES_IN_PROGRESS.md
+FINAL_FIXES_COMPLETE.md
+FINAL_FIXES_SESSION3.md
+FIXES_COMPLETED_NOV6.md
+FIXES_IMPLEMENTED_COMPLETE.md
+GOOGLE_MAPS_SECURE_SETUP.md
+HOME_PAGE_VISUAL_CHANGES.md
+IMPLEMENTATION_COMPLETE.md
+KEY_ENCRYPTION_GUIDE.md
+KUBERNETES_MIGRATION_REALITY_CHECK.md
+ONE_SHELTER_PER_USER.md
+PLACES_SDK_IMPLEMENTATION.md
+PRIVACY_POLICY.md
+QUICK_CHECKLIST.md
+QUICK_START_AFTER_FIXES.md
+QUICK_START_ENCRYPTION.md
+QUICK_START.md
+READ_ME_FIRST.md
+README_ANALYSIS.md
+README_START_HERE.md
+REALITY_CHECK_BEFORE_YOU_START.md
+ROADMAP_FULL_K8S_6_MONTHS.md
+SESSION2_COMPILATION_FIXED.md
+SHELTER_MODEL_FIXED.md
+SOLUTION_COMPLETE.md
+TEXT_COLOR_FIX_GUIDE.md
+
+# ============ TEMPORARY & SCRIPT FILES ============
+
+# Batch/Shell Scripts (keeping deployment scripts)
+manual_clean.bat
+cleanup-docs.bat
+build-test.bat
+replace_home_layout.bat
+run-encryption.bat
+scan-security-logs.bat
+test-firebase-connection.bat
+verify-git-security.bat
+ready-to-push.bat
+deploy-firebase-fixes.sh
+deploy-firebase-functions-new.bat
+deploy-firebase-functions.bat
+deploy-firebase-rules.sh
+deploy-firestore-indexes.bat
+deploy-firestore-rules-fixed.bat
+deploy.bat
+
+# GitHub setup guide (for local use only)
+GITHUB_PUSH_GUIDE.md
+PUSH_READY_SUMMARY.md
+GIT_COMMANDS.md
+START_HERE.txt
+PUSH_READY_S
+# Log Files
+*.log
+*.txt
+security_log_scan.txt
+firebase-remote-config.txt
+firestore-security-rules.txt
+native-lib-keys.txt
+SECURITY_QUICK_REFERENCE.txt
+*.rules
+*.txt
+*.backup
+*.bat
+# Backup Files
+*.backup
+*.bak
+*.old
+firestore-security-rules.rules.backup
+
+# Test Files
+test/
+tests/
+androidTest/
+
+# ============ MISCELLANEOUS ============
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Crash logs
+crash_*.txt
+
+# Proguard
+proguard/
+proguard-project.txt
+
+# R8
+r8/
+
+# Verification Scripts
+verify-admin.js
+
+# ============ KEEP THESE FILES ============
+# (Using ! to negate ignore)
+
+# Keep README
+!README.md
+
+# Keep Gradle Wrapper
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Keep ProGuard Rules
+!proguard-rules.pro
+!app/proguard-rules.pro
+
+# Keep Firebase Config Templates (without secrets)
+!firebase.json
+!firestore.indexes.json
+!firestore-security-rules.rules
+!firebase-storage-rules.rules
+
+# Keep CMakeLists for native build
+!**/CMakeLists.txt
+
+# Keep package.json for Firebase Functions
+!functions/package.json
+!functions/index.js

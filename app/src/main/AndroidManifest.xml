@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Storage permissions for different API levels -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <!-- Media permissions for Android 13+ -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <!-- Camera permission -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Camera feature (not required to allow app installation on devices without camera) -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+    <application
+        android:name=".PetAdoptionApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_paw_home"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_rounded"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.P3"
+        android:enableOnBackInvokedCallback="true"
+        android:requestLegacyExternalStorage="false"
+        android:preserveLegacyExternalStorage="false"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="false"
+        tools:targetApi="33">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${GOOGLE_MAPS_API_KEY}" />
+
+        <!-- Splash Screen Activity -->
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.P3.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <!-- Authentication Activities -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <!-- Pet Related Activities -->
+        <activity
+            android:name=".activities.PetDetailsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.AdoptionFormActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.PetsListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.RescueRequestActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.TipsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.ContactActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.MyRequestsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.MyAdoptionRequestsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <!-- AI-Powered Pet Identification Activities -->
+        <activity
+            android:name=".activities.PetIdentificationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar"
+            android:label="AI Pet Identifier" />
+
+        <activity
+            android:name=".activities.AIChatActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar"
+            android:label="Chat with AI"
+            android:parentActivityName=".activities.PetIdentificationActivity" />
+
+        <!-- Admin Activities -->
+        <activity
+            android:name=".activities.admin.AdminDashboardActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.admin.ManagePetsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.admin.AddEditPetActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.admin.AdoptionRequestsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.admin.RescueRequestsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.admin.ContactMessagesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.admin.ManageTipsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.admin.AddEditTipActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.admin.OfficeDetailsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.admin.HistoryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.admin.AddAdminActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.admin.ManageSuccessStoriesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.admin.SendNotificationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.admin.AdminHistoryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <!-- Shelter Activities -->
+        <activity
+            android:name=".activities.SheltersListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.NearbySheltersActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.ShelterDetailsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.RegisterShelterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.MapLocationPickerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <!-- Admin Shelter Activities -->
+        <activity
+            android:name=".activities.admin.ManageSheltersActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.admin.ShelterRequestsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.admin.AddEditShelterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <!-- Advanced Features Activities -->
+        <activity
+            android:name=".activities.AnalyticsDashboardActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+
+        <activity
+            android:name=".activities.MessagesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.UserMessagesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.ConversationsListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.PetHealthTrackerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.AdvancedSearchActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <activity
+            android:name=".activities.AllFeaturesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <!-- Admin Analytics Activity -->
+        <activity
+            android:name=".activities.admin.AnalyticsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.P3.NoActionBar" />
+
+        <!-- Firebase Messaging Service -->
+        <service
+            android:name=".services.PetAdoptionMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- File Provider for sharing images -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

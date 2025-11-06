@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Sent Message Bubble -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/messageCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="280dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Reply Preview (if replying) -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/replyPreviewCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#1AFFFFFF"
+                app:strokeColor="#33FFFFFF"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvReplyUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John Doe"
+                        android:textColor="#CCFFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvReplyMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Original message text..."
+                        android:textColor="#99FFFFFF"
+                        android:textSize="13sp"
+                        android:maxLines="2"
+                        android:ellipsize="end" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Message Text -->
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello! How are you?"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:lineSpacingExtra="2dp" />
+
+            <!-- Image (if present) -->
+            <ImageView
+                android:id="@+id/ivMessageImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Message image"
+                android:visibility="gone" />
+
+            <!-- Message Footer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <!-- Edited Label -->
+                <TextView
+                    android:id="@+id/tvEdited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="edited"
+                    android:textColor="#B3FFFFFF"
+                    android:textSize="11sp"
+                    android:textStyle="italic"
+                    android:visibility="gone"
+                    android:layout_marginEnd="6dp" />
+
+                <!-- Timestamp -->
+                <TextView
+                    android:id="@+id/tvTimestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:30 AM"
+                    android:textColor="#CCFFFFFF"
+                    android:textSize="12sp" />
+
+                <!-- Read Status -->
+                <ImageView
+                    android:id="@+id/ivReadStatus"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/ic_check"
+                    android:contentDescription="Read status"
+                    app:tint="#CCFFFFFF" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Reactions Bar -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/reactionsCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="3dp"
+        app:cardBackgroundColor="@color/surface"
+        app:layout_constraintEnd_toEndOf="@id/messageCard"
+        app:layout_constraintTop_toBottomOf="@id/messageCard">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvReactions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="❤️ 2  😂 1"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

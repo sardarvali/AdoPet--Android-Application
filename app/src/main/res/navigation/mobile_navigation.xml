@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.syed.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_dogs"
+        android:name="com.syed.fragments.DogsFragment"
+        android:label="Dogs"
+        tools:layout="@layout/fragment_pets" />
+
+    <fragment
+        android:id="@+id/nav_cats"
+        android:name="com.syed.fragments.CatsFragment"
+        android:label="Cats"
+        tools:layout="@layout/fragment_pets" />
+
+    <fragment
+        android:id="@+id/nav_other_pets"
+        android:name="com.syed.fragments.OtherPetsFragment"
+        android:label="Other Pets"
+        tools:layout="@layout/fragment_pets" />
+
+    <fragment
+        android:id="@+id/nav_all_pets"
+        android:name="com.syed.fragments.AllPetsFragment"
+        android:label="All Pets"
+        tools:layout="@layout/fragment_pets" />
+
+    <fragment
+        android:id="@+id/nav_rescue"
+        android:name="com.syed.fragments.RescueFragment"
+        android:label="Rescue Request"
+        tools:layout="@layout/fragment_rescue" />
+
+    <fragment
+        android:id="@+id/nav_tips"
+        android:name="com.syed.fragments.TipsFragment"
+        android:label="Pet Care Tips"
+        tools:layout="@layout/fragment_tips" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.syed.fragments.ContactFragment"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contact" />
+
+    <fragment
+        android:id="@+id/nav_my_requests"
+        android:name="com.syed.fragments.MyRequestsFragment"
+        android:label="My Requests"
+        tools:layout="@layout/fragment_my_requests" />
+
+</navigation>

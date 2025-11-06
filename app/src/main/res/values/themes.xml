@@ -1,0 +1,122 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme - Light Mode -->
+    <style name="Base.Theme.P3" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="cardViewStyle">@style/CardViewStyle</item>
+    </style>
+
+    <style name="Theme.P3" parent="Base.Theme.P3" />
+
+    <style name="Theme.P3.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.P3.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.P3.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Pet" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+    </style>
+
+    <style name="Theme.Pet" parent="Base.Theme.Pet" />
+
+    <!-- Card Styles -->
+    <style name="CardViewStyle" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="contentPadding">16dp</item>
+        <item name="strokeColor">@color/card_stroke</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.P3.Splash" parent="Theme.P3.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="ButtonPrimary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="ButtonSecondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/primary</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <!-- Text Input Styles -->
+    <style name="TextInputLayoutStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+    </style>
+
+    <!-- Toolbar Style -->
+    <style name="ToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="titleTextColor">@color/white</item>
+        <item name="android:background">@color/primary</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <!-- Bottom Navigation Style -->
+    <style name="BottomNavigationStyle" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemIconTint">@color/primary</item>
+        <item name="itemTextColor">@color/text_primary</item>
+        <item name="android:background">@color/surface</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <!-- Dialog Style -->
+    <style name="DialogStyle" parent="ThemeOverlay.Material3.Dialog.Alert">
+        <item name="android:background">@color/surface</item>
+        <item name="buttonBarPositiveButtonStyle">@style/DialogButtonPositive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/DialogButtonNegative</item>
+    </style>
+
+    <style name="DialogButtonPositive" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DialogButtonNegative" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+</resources>

@@ -1,0 +1,57 @@
+package com.syed.models
+
+import com.google.firebase.Timestamp
+
+data class AdoptionRequest(
+    var id: String = "",
+    var userId: String = "",
+    var petId: String = "",
+    var petName: String = "",
+    var userName: String = "",
+    var userEmail: String = "",
+    var userPhone: String = "",
+    var address: String = "",
+    var experience: String = "",
+    var livingSpace: String = "",
+    var otherPets: String = "",
+    var workSchedule: String = "",
+    var reason: String = "",
+    var status: String = "pending", // pending, approved, rejected, in_review
+    var submittedAt: Long = System.currentTimeMillis(),
+    var reviewedAt: Long = 0,
+    var reviewedBy: String = "",
+    var adminNotes: String = "",
+    var createdAt: Timestamp? = null,
+    var updatedAt: Timestamp? = null,
+    var requestDate: Long = System.currentTimeMillis(),
+    var responseDate: Long = 0,
+    var adminMessage: String = "",
+    var rejectionReason: String = "",
+    var timestamp: Long = System.currentTimeMillis(),
+) {
+    constructor() : this(
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "pending",
+        System.currentTimeMillis(),
+        0,
+        "",
+        "",
+        null,
+        null,
+        System.currentTimeMillis(),
+        0,
+        "",
+    )
+}

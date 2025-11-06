@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context=".activities.SplashActivity">
+
+    <!-- Floating cloud background -->
+    <ImageView
+        android:id="@+id/cloud1"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:alpha="0.3"
+        android:src="@drawable/ic_cloud"
+        android:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cloud2"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:alpha="0.25"
+        android:src="@drawable/ic_cloud"
+        android:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Floating pet silhouettes -->
+    <ImageView
+        android:id="@+id/floatingDog"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="160dp"
+        android:alpha="0.4"
+        android:src="@drawable/ic_dog_silhouette"
+        android:tint="@color/splash_pet_silhouette"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/floatingCat"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="180dp"
+        android:alpha="0.4"
+        android:src="@drawable/ic_cat_silhouette"
+        android:tint="@color/splash_pet_silhouette"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/floatingBird"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="250dp"
+        android:alpha="0.35"
+        android:src="@drawable/ic_bird_silhouette"
+        android:tint="@color/splash_pet_silhouette"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Animated paw print trail -->
+    <ImageView
+        android:id="@+id/pawTrail1"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:rotation="15"
+        android:src="@drawable/ic_paw_print"
+        android:tint="@color/splash_paw_trail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pawTrail2"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="230dp"
+        android:rotation="-10"
+        android:src="@drawable/ic_paw_print"
+        android:tint="@color/splash_paw_trail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pawTrail3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="260dp"
+        android:rotation="25"
+        android:src="@drawable/ic_paw_print"
+        android:tint="@color/splash_paw_trail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pawTrail4"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="290dp"
+        android:rotation="-5"
+        android:src="@drawable/ic_paw_print"
+        android:tint="@color/splash_paw_trail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Decorative paw prints around logo -->
+    <ImageView
+        android:id="@+id/pawPrint1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="80dp"
+        android:src="@drawable/ic_paw_print"
+        android:tint="@color/splash_paw_tint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pawPrint2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/ic_paw_print"
+        android:tint="@color/splash_paw_tint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pawPrint3"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="200dp"
+        android:src="@drawable/ic_paw_print"
+        android:tint="@color/splash_paw_tint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Main logo container with enhanced shadow -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/logoContainer"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="70dp"
+        app:cardElevation="12dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/appName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_pet_logo"
+            android:tint="@color/primary" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Orbiting pets around logo -->
+    <ImageView
+        android:id="@+id/orbitingPet1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_dog_face"
+        android:tint="@color/splash_orbiting_pet"
+        app:layout_constraintBottom_toBottomOf="@+id/logoContainer"
+        app:layout_constraintEnd_toStartOf="@+id/logoContainer"
+        app:layout_constraintStart_toStartOf="@+id/logoContainer"
+        app:layout_constraintTop_toTopOf="@+id/logoContainer" />
+
+    <ImageView
+        android:id="@+id/orbitingPet2"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_cat_face"
+        android:tint="@color/splash_orbiting_pet"
+        app:layout_constraintBottom_toBottomOf="@+id/logoContainer"
+        app:layout_constraintEnd_toEndOf="@+id/logoContainer"
+        app:layout_constraintStart_toEndOf="@+id/logoContainer"
+        app:layout_constraintTop_toTopOf="@+id/logoContainer" />
+
+    <ImageView
+        android:id="@+id/orbitingPet3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_rabbit_face"
+        android:tint="@color/splash_orbiting_pet"
+        app:layout_constraintBottom_toTopOf="@+id/logoContainer"
+        app:layout_constraintEnd_toEndOf="@+id/logoContainer"
+        app:layout_constraintStart_toStartOf="@+id/logoContainer"
+        app:layout_constraintTop_toTopOf="@+id/logoContainer" />
+
+    <!-- App name with enhanced styling -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/app_name"
+        android:textColor="@color/splash_text_primary"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:shadowColor="@color/splash_text_shadow"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoContainer" />
+
+    <!-- Tagline with pet emoji -->
+    <LinearLayout
+        android:id="@+id/taglineContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appName">
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/splash_tagline"
+            android:textColor="@color/splash_text_secondary"
+            android:textSize="18sp" />
+
+        <!-- Animated heart -->
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_heart_filled"
+            android:tint="@color/splash_heart_color" />
+
+    </LinearLayout>
+
+    <!-- Bouncing pet icons at bottom -->
+    <LinearLayout
+        android:id="@+id/bottomPetsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/bottomPet1"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginHorizontal="12dp"
+            android:src="@drawable/ic_dog_sitting"
+            android:tint="@color/splash_bottom_pets" />
+
+        <ImageView
+            android:id="@+id/bottomPet2"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginHorizontal="12dp"
+            android:src="@drawable/ic_cat_sitting"
+            android:tint="@color/splash_bottom_pets" />
+
+        <ImageView
+            android:id="@+id/bottomPet3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="12dp"
+            android:src="@drawable/ic_bird_perched"
+            android:tint="@color/splash_bottom_pets" />
+
+        <ImageView
+            android:id="@+id/bottomPet4"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginHorizontal="12dp"
+            android:src="@drawable/ic_rabbit_sitting"
+            android:tint="@color/splash_bottom_pets" />
+
+    </LinearLayout>
+
+    <!-- Loading indicator -->
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/loadingIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:indeterminate="true"
+        app:indicatorColor="@color/primary"
+        app:trackColor="@color/splash_progress_track"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Copyright text -->
+    <TextView
+        android:id="@+id/copyrightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/splash_copyright"
+        android:textColor="@color/splash_text_hint"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

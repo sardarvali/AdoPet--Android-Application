@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tip_categories">
+        <item>General</item>
+        <item>Feeding</item>
+        <item>Health</item>
+        <item>Training</item>
+        <item>Grooming</item>
+        <item>Exercise</item>
+        <item>Behavior</item>
+        <item>Safety</item>
+    </string-array>
+
+    <string-array name="pet_types">
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Bird</item>
+        <item>Rabbit</item>
+        <item>Hamster</item>
+        <item>Fish</item>
+        <item>Reptile</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="urgency_levels">
+        <item>Low - Not urgent</item>
+        <item>Medium - Needs attention</item>
+        <item>High - Urgent care needed</item>
+        <item>Critical - Emergency</item>
+    </string-array>
+
+    <string-array name="pet_genders">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Unknown</item>
+    </string-array>
+
+
+
+
+</resources>
+

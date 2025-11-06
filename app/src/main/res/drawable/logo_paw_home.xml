@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background gradient -->
+    <path
+        android:pathData="M0,0 L108,0 L108,108 L0,108 Z"
+        android:fillColor="#E3F2FD"/>
+
+    <!-- Grass ground -->
+    <path
+        android:pathData="M0,85 Q20,82 40,85 Q60,88 80,85 Q100,82 108,85 L108,108 L0,108 Z"
+        android:fillColor="#81C784"/>
+    <path
+        android:pathData="M0,88 Q25,86 50,88 Q75,90 108,88 L108,108 L0,108 Z"
+        android:fillColor="#66BB6A"/>
+
+    <!-- Grass blades details -->
+    <path
+        android:pathData="M10,85 L11,78 M25,87 L26,80 M40,86 L41,79 M55,88 L56,81 M70,85 L71,78 M85,87 L86,80 M95,86 L96,79"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="1"/>
+
+    <!-- House shadow on ground -->
+    <path
+        android:pathData="M24,70 L84,70 Q86,85 84,85 L24,85 Q22,85 24,70 Z"
+        android:fillColor="#000000"
+        android:fillAlpha="0.15"/>
+
+    <!-- House wall -->
+    <path
+        android:pathData="M28,45 L80,45 L80,75 L28,75 Z"
+        android:fillColor="#FFEBEE"/>
+
+    <!-- House wall texture -->
+    <path
+        android:pathData="M28,50 L80,50 M28,55 L80,55 M28,60 L80,60 M28,65 L80,65 M28,70 L80,70"
+        android:strokeColor="#FFCDD2"
+        android:strokeWidth="0.5"/>
+
+    <!-- Roof -->
+    <path
+        android:pathData="M54,25 L88,45 L20,45 Z"
+        android:fillColor="#E53935"/>
+
+    <!-- Roof shadow -->
+    <path
+        android:pathData="M54,25 L88,45 L85,46 L54,28 L23,46 L20,45 Z"
+        android:fillColor="#C62828"/>
+
+    <!-- Roof tiles -->
+    <path
+        android:pathData="M30,43 L35,43 M40,43 L45,43 M50,43 L55,43 M58,43 L63,43 M68,43 L73,43 M78,43 L82,43"
+        android:strokeColor="#B71C1C"
+        android:strokeWidth="1.5"/>
+    <path
+        android:pathData="M32,38 L37,38 M42,38 L47,38 M52,38 L57,38 M60,38 L65,38 M70,38 L75,38"
+        android:strokeColor="#B71C1C"
+        android:strokeWidth="1.5"/>
+
+    <!-- Chimney -->
+    <path
+        android:pathData="M68,28 L76,28 L76,38 L68,38 Z"
+        android:fillColor="#D32F2F"/>
+    <path
+        android:pathData="M67,26 L77,26 L77,28 L67,28 Z"
+        android:fillColor="#C62828"/>
+
+    <!-- Window left with frame -->
+    <path
+        android:pathData="M33,50 L45,50 L45,62 L33,62 Z"
+        android:fillColor="#90CAF9"/>
+    <path
+        android:pathData="M33,50 L45,50 L45,62 L33,62 Z"
+        android:strokeColor="#1565C0"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"/>
+    <path
+        android:pathData="M39,50 L39,62 M33,56 L45,56"
+        android:strokeColor="#1976D2"
+        android:strokeWidth="1.2"/>
+
+    <!-- Window reflection -->
+    <path
+        android:pathData="M35,52 L38,52 L38,55 L35,55 Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.4"/>
+
+    <!-- Window right with frame -->
+    <path
+        android:pathData="M63,50 L75,50 L75,62 L63,62 Z"
+        android:fillColor="#90CAF9"/>
+    <path
+        android:pathData="M63,50 L75,50 L75,62 L63,62 Z"
+        android:strokeColor="#1565C0"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"/>
+    <path
+        android:pathData="M69,50 L69,62 M63,56 L75,56"
+        android:strokeColor="#1976D2"
+        android:strokeWidth="1.2"/>
+
+    <!-- Window reflection -->
+    <path
+        android:pathData="M65,52 L68,52 L68,55 L65,55 Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.4"/>
+
+    <!-- Door -->
+    <path
+        android:pathData="M48,55 L60,55 L60,75 L48,75 Z"
+        android:fillColor="#8D6E63"/>
+
+    <!-- Door frame -->
+    <path
+        android:pathData="M48,55 L60,55 L60,75 L48,75 Z"
+        android:strokeColor="#5D4037"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"/>
+
+    <!-- Door panels -->
+    <path
+        android:pathData="M50,57 L58,57 L58,64 L50,64 Z M50,66 L58,66 L58,73 L50,73 Z"
+        android:strokeColor="#6D4C41"
+        android:strokeWidth="1"/>
+
+    <!-- Door knob -->
+    <path
+        android:pathData="M56,67m-1.2,0a1.2,1.2 0 1,1 2.4,0a1.2,1.2 0 1,1 -2.4,0"
+        android:fillColor="#FDD835"/>
+
+    <!-- Golden Retriever Dog (playing pose - sitting) -->
+    <!-- Body -->
+    <path
+        android:pathData="M32,76 Q30,74 30,71 Q30,68 33,66 Q36,65 39,66 Q42,68 42,71 Q42,74 40,78 L32,78 Z"
+        android:fillColor="#F4A460"/>
+
+    <!-- Chest lighter color -->
+    <path
+        android:pathData="M34,70 Q34,68 36,67 Q38,68 38,70 Q38,73 36,75 Q34,73 34,70 Z"
+        android:fillColor="#FFDAB9"/>
+
+    <!-- Head -->
+    <path
+        android:pathData="M36,62 Q33,62 32,64 Q31,66 32,68 Q33,70 36,70 Q39,70 40,68 Q41,66 40,64 Q39,62 36,62 Z"
+        android:fillColor="#F4A460"/>
+
+    <!-- Snout -->
+    <path
+        android:pathData="M36,67 Q35,67 34.5,67.5 Q34,68 34.5,68.5 Q35,69 36,69 Q37,69 37.5,68.5 Q38,68 37.5,67.5 Q37,67 36,67 Z"
+        android:fillColor="#FFDAB9"/>
+
+    <!-- Ears (floppy) -->
+    <path
+        android:pathData="M31,64 Q29,63 29,65 Q29,67 30,68 Q31,67 31,65.5 Z"
+        android:fillColor="#DEB887"/>
+    <path
+        android:pathData="M41,64 Q43,63 43,65 Q43,67 42,68 Q41,67 41,65.5 Z"
+        android:fillColor="#DEB887"/>
+
+    <!-- Eyes -->
+    <path
+        android:pathData="M34.5,65m-0.8,0a0.8,0.8 0 1,1 1.6,0a0.8,0.8 0 1,1 -1.6,0"
+        android:fillColor="#3E2723"/>
+    <path
+        android:pathData="M37.5,65m-0.8,0a0.8,0.8 0 1,1 1.6,0a0.8,0.8 0 1,1 -1.6,0"
+        android:fillColor="#3E2723"/>
+    <path
+        android:pathData="M34.3,64.5m-0.3,0a0.3,0.3 0 1,1 0.6,0a0.3,0.3 0 1,1 -0.6,0"
+        android:fillColor="#FFFFFF"/>
+    <path
+        android:pathData="M37.3,64.5m-0.3,0a0.3,0.3 0 1,1 0.6,0a0.3,0.3 0 1,1 -0.6,0"
+        android:fillColor="#FFFFFF"/>
+
+    <!-- Nose -->
+    <path
+        android:pathData="M36,68m-0.9,0a0.9,0.9 0 1,1 1.8,0a0.9,0.9 0 1,1 -1.8,0"
+        android:fillColor="#3E2723"/>
+
+    <!-- Tail (wagging) -->
+    <path
+        android:pathData="M40,75 Q43,73 45,74 Q46,75 45,76"
+        android:strokeColor="#F4A460"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"/>
+
+    <!-- Front paw -->
+    <path
+        android:pathData="M34,78 L34,82 L36,82 L36,78 Z"
+        android:fillColor="#DEB887"/>
+    <path
+        android:pathData="M34,82 Q34,83 35,83 Q36,83 36,82"
+        android:fillColor="#8B4513"/>
+
+    <!-- Gray Cat (playing pose - lying down playful) -->
+    <!-- Body -->
+    <path
+        android:pathData="M76,76 Q78,74 78,71 Q78,68 75,66 Q72,65 69,66 Q66,68 66,71 Q66,74 68,78 L76,78 Z"
+        android:fillColor="#9E9E9E"/>
+
+    <!-- Belly lighter -->
+    <path
+        android:pathData="M70,70 Q70,68 72,67 Q74,68 74,70 Q74,73 72,75 Q70,73 70,70 Z"
+        android:fillColor="#BDBDBD"/>
+
+    <!-- Head -->
+    <path
+        android:pathData="M72,62 Q75,62 76,64 Q77,66 76,68 Q75,70 72,70 Q69,70 68,68 Q67,66 68,64 Q69,62 72,62 Z"
+        android:fillColor="#9E9E9E"/>
+
+    <!-- Ears (pointed) -->
+    <path
+        android:pathData="M69,61 L70,64 L68,63 Z"
+        android:fillColor="#757575"/>
+    <path
+        android:pathData="M75,61 L74,64 L76,63 Z"
+        android:fillColor="#757575"/>
+
+    <!-- Inner ear -->
+    <path
+        android:pathData="M69.3,62 L69.8,63.5 L68.8,63 Z"
+        android:fillColor="#FFC0CB"/>
+    <path
+        android:pathData="M74.7,62 L74.2,63.5 L75.2,63 Z"
+        android:fillColor="#FFC0CB"/>
+
+    <!-- Eyes -->
+    <path
+        android:pathData="M70,65.5 Q70,64.8 70.8,64.8 Q71.6,64.8 71.6,65.5 Q71.6,66.2 70.8,66.2 Q70,66.2 70,65.5 Z"
+        android:fillColor="#7CB342"/>
+    <path
+        android:pathData="M72.4,65.5 Q72.4,64.8 73.2,64.8 Q74,64.8 74,65.5 Q74,66.2 73.2,66.2 Q72.4,66.2 72.4,65.5 Z"
+        android:fillColor="#7CB342"/>
+
+    <!-- Pupils (vertical slits) -->
+    <path
+        android:pathData="M70.8,65 L70.8,66"
+        android:strokeColor="#000000"
+        android:strokeWidth="0.5"/>
+    <path
+        android:pathData="M73.2,65 L73.2,66"
+        android:strokeColor="#000000"
+        android:strokeWidth="0.5"/>
+
+    <!-- Nose -->
+    <path
+        android:pathData="M72,67 L71.5,67.5 L72,67.8 L72.5,67.5 Z"
+        android:fillColor="#F48FB1"/>
+
+    <!-- Whiskers -->
+    <path
+        android:pathData="M69,66 L66,66 M69,67 L66,67.5 M75,66 L78,66 M75,67 L78,67.5"
+        android:strokeColor="#EEEEEE"
+        android:strokeWidth="0.4"/>
+
+    <!-- Tail (curved playful) -->
+    <path
+        android:pathData="M68,75 Q65,73 63,74 Q62,75 63,76"
+        android:strokeColor="#9E9E9E"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"/>
+
+    <!-- Front paw -->
+    <path
+        android:pathData="M72,78 L72,82 L74,82 L74,78 Z"
+        android:fillColor="#757575"/>
+    <path
+        android:pathData="M72,82 Q72,83 73,83 Q74,83 74,82"
+        android:fillColor="#424242"/>
+
+    <!-- Ball toy between them -->
+    <path
+        android:pathData="M54,80m-4,0a4,4 0 1,1 8,0a4,4 0 1,1 -8,0"
+        android:fillColor="#FF5252"/>
+
+    <!-- Ball highlight -->
+    <path
+        android:pathData="M52,78.5m-1.2,0a1.2,1.2 0 1,1 2.4,0a1.2,1.2 0 1,1 -2.4,0"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.5"/>
+
+    <!-- Ball pattern -->
+    <path
+        android:pathData="M52,80 Q54,78 56,80 M52,80 Q54,82 56,80"
+        android:strokeColor="#D32F2F"
+        android:strokeWidth="0.8"/>
+
+    <!-- Small paw prints on ground -->
+    <path
+        android:pathData="M20,90 Q20,89 21,89 Q22,89 22,90 Q22,91 21,91 Q20,91 20,90 Z M19,89 Q19,88.5 19.5,88.5 Q20,88.5 20,89 Q20,89.5 19.5,89.5 Q19,89.5 19,89 Z M22,89 Q22,88.5 22.5,88.5 Q23,88.5 23,89 Q23,89.5 22.5,89.5 Q22,89.5 22,89 Z"
+        android:fillColor="#8D6E63"
+        android:fillAlpha="0.4"/>
+
+    <path
+        android:pathData="M86,92 Q86,91 87,91 Q88,91 88,92 Q88,93 87,93 Q86,93 86,92 Z M85,91 Q85,90.5 85.5,90.5 Q86,90.5 86,91 Q86,91.5 85.5,91.5 Q85,91.5 85,91 Z M88,91 Q88,90.5 88.5,90.5 Q89,90.5 89,91 Q89,91.5 88.5,91.5 Q88,91.5 88,91 Z"
+        android:fillColor="#757575"
+        android:fillAlpha="0.4"/>
+
+</vector>

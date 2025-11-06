@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AdoPet</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">AdoPet</string>
+    <string name="nav_header_subtitle">Find Your Perfect Pet</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!-- Google Sign-In - Replace with your actual web client ID from Firebase Console -->
+    <string name="default_web_client_id">default_web_client_id</string>
+
+    <!-- Pet related strings -->
+    <string name="pet_gender_male">Male</string>
+    <string name="pet_gender_female">Female</string>
+    <string name="pet_gender_unknown">Unknown</string>
+
+    <!-- Splash Screen Strings -->
+    <string name="splash_tagline">Find Your Perfect Companion</string>
+    <string name="splash_copyright">© 2025 Pet Adoption App</string>
+
+    <!-- Tips Management Strings -->
+    <string name="manage_tips_title">Pet Care Tips Management</string>
+    <string name="manage_tips_subtitle">Share valuable insights to help pet owners\nprovide the best care for their companions</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="add_new_tip">Add New Tip</string>
+    <string name="categories">Categories</string>
+    <string name="create_new_tip">Create New Tip</string>
+    <string name="tip_title">Tip Title</string>
+    <string name="category">Category</string>
+    <string name="tip_content">Tip Content</string>
+    <string name="priority_level">Priority Level</string>
+    <string name="priority_low">Low</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_high">High</string>
+    <string name="cancel">Cancel</string>
+    <string name="save_tip">Save Tip</string>
+    <string name="all_tips">All Tips</string>
+    <string name="tips_count_zero">0 tips</string>
+    <string name="filter_all">All</string>
+    <string name="filter_active">Active</string>
+    <string name="filter_drafts">Drafts</string>
+    <string name="no_tips_yet">No Tips Yet</string>
+    <string name="empty_tips_message">Share your expertise! Create your first\npet care tip to help other pet owners.</string>
+    <string name="create_first_tip">Create First Tip</string>
+    <string name="add_tip">Add Tip</string>
+    <string name="processing">Processing...</string>
+
+    <!-- Content Descriptions -->
+    <string name="lightbulb_icon">Lightbulb icon</string>
+    <string name="add_icon">Add icon</string>
+    <string name="category_icon">Category icon</string>
+    <string name="edit_icon">Edit icon</string>
+    <string name="empty_tips_illustration">Empty tips illustration</string>
+
+    <!-- Admin Dashboard -->
+    <string name="pets">Pets</string>
+    <string name="requests">Requests</string>
+    <string name="messages">Messages</string>
+    <string name="manage_pets">Manage Pets</string>
+    <string name="shelters">Shelters</string>
+    <string name="adoption_requests">Adoption Requests</string>
+    <string name="rescue_requests">Rescue Requests</string>
+    <string name="tips">Tips</string>
+    <string name="office">Office</string>
+    <string name="admins">Admins</string>
+    <string name="history">History</string>
+
+
+    <string name="add_new_pet">Add New Pet</string>
+    <string name="edit_pet">Edit Pet</string>
+
+    <!-- Section Headers -->
+    <string name="basic_information">Basic Information</string>
+    <string name="additional_details">Additional Details</string>
+
+    <!-- Field Labels -->
+    <string name="pet_name">Pet Name</string>
+    <string name="pet_type">Pet Type</string>
+    <string name="breed">Breed</string>
+    <string name="age_years">Age (years)</string>
+    <string name="gender">Gender</string>
+    <string name="description">Description</string>
+    <string name="location">Location</string>
+    <string name="available_for_adoption">Available for Adoption</string>
+
+    <!-- Buttons -->
+    <string name="select_image">Select Image</string>
+    <string name="save_pet">Save Pet</string>
+    <string name="discard">Discard</string>
+    <string name="dismiss">Dismiss</string>
+
+    <!-- Content Descriptions -->
+    <string name="pet_image">Pet image</string>
+    <string name="add_photo">Add photo</string>
+
+    <!-- Loading Messages -->
+    <string name="loading_pet_data">Loading pet data…</string>
+    <string name="saving">Saving…</string>
+    <string name="saving_pet">Saving pet…</string>
+    <string name="checking_access">Checking access…</string>
+
+
+    <!-- Success Messages -->
+    <string name="pet_added_successfully">Pet added successfully!</string>
+    <string name="pet_updated_successfully">Pet updated successfully!</string>
+
+    <!-- Error Messages -->
+    <string name="error_pet_name_required">Pet name is required</string>
+    <string name="error_breed_required">Breed is required</string>
+    <string name="error_age_required">Age is required</string>
+    <string name="error_age_invalid">Please enter a valid age (0-30 years)</string>
+    <string name="error_description_required">Description is required</string>
+    <string name="error_description_too_short">Description must be at least 20 characters</string>
+    <string name="error_location_required">Location is required</string>
+    <string name="error_image_required">Please select an image for the pet</string>
+
+    <!-- Dialogs -->
+    <string name="unsaved_changes">Unsaved Changes</string>
+    <string name="unsaved_changes_message">You have unsaved changes. Are you sure you want to discard them?</string>
+
+    <!-- Pet Types -->
+
+</resources>

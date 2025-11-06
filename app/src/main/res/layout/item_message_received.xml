@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Avatar -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/avatarCard"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_person"
+            android:contentDescription="User avatar" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Received Message Bubble -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/messageCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="80dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/surface"
+        app:strokeColor="@color/divider"
+        app:strokeWidth="1dp"
+        app:layout_constraintStart_toEndOf="@id/avatarCard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="280dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Sender Name (in group chat) -->
+            <TextView
+                android:id="@+id/tvSenderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:textColor="@color/primary"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone" />
+
+            <!-- Reply Preview (if replying) -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/replyPreviewCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/gray_50"
+                app:strokeColor="@color/primary"
+                app:strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvReplyUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You"
+                        android:textColor="@color/primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvReplyMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Original message text..."
+                        android:textColor="@color/text_secondary"
+                        android:textSize="13sp"
+                        android:maxLines="2"
+                        android:ellipsize="end" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Message Text -->
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello! How are you?"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:lineSpacingExtra="2dp" />
+
+            <!-- Image (if present) -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/imageCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/ivMessageImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Message image" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Message Footer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <!-- Timestamp -->
+                <TextView
+                    android:id="@+id/tvTimestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:30 AM"
+                    android:textColor="@color/text_hint"
+                    android:textSize="12sp" />
+
+                <!-- Edited Label -->
+                <TextView
+                    android:id="@+id/tvEdited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="edited"
+                    android:textColor="@color/text_hint"
+                    android:textSize="11sp"
+                    android:textStyle="italic"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Reactions Bar -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/reactionsCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:visibility="gone"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="3dp"
+        app:cardBackgroundColor="@color/surface"
+        app:layout_constraintStart_toStartOf="@id/messageCard"
+        app:layout_constraintTop_toBottomOf="@id/messageCard">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvReactions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="❤️ 2  😂 1"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

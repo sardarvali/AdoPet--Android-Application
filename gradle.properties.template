@@ -1,0 +1,51 @@
+# ================================
+# Gradle Properties Template
+# ================================
+# Copy this file to gradle.properties and fill in your values
+# NEVER commit gradle.properties with real API keys
+
+# Project-wide Gradle settings
+org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
+org.gradle.parallel=true
+org.gradle.caching=true
+
+# AndroidX package structure
+android.useAndroidX=true
+android.enableJetifier=false
+
+# Kotlin code style
+kotlin.code.style=official
+
+# Enable non-transitive R classes
+android.nonTransitiveRClass=true
+
+# Enable build cache
+android.enableBuildCache=true
+
+# ================================
+# API KEYS (Replace with your actual keys)
+# ================================
+
+# Google Maps API Key
+# Get from: https://console.cloud.google.com/google/maps-apis
+GOOGLE_MAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY_HERE
+
+# ================================
+# BUILD CONFIGURATION
+# ================================
+
+# Enable R8 full mode
+android.enableR8.fullMode=true
+
+# Enable configuration caching
+org.gradle.unsafe.configuration-cache=true
+
+# ================================
+# SIGNING CONFIGURATION (for release builds)
+# ================================
+# Uncomment and fill these for release builds
+# RELEASE_STORE_FILE=path/to/your/keystore.jks
+# RELEASE_STORE_PASSWORD=your_store_password
+# RELEASE_KEY_ALIAS=your_key_alias
+# RELEASE_KEY_PASSWORD=your_key_password
+

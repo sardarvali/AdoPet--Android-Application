@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="🏠 Home" />
+        <item
+            android:id="@+id/nav_all_pets"
+            android:icon="@drawable/ic_pets"
+            android:title="🐾 All Pets" />
+        <item
+            android:id="@+id/nav_all_features"
+            android:icon="@drawable/ic_add"
+            android:title="🎯 All Features" />
+    </group>
+
+    <item android:title="📂 Browse Pets">
+        <menu>
+            <item
+                android:id="@+id/nav_dogs"
+                android:icon="@drawable/ic_dog"
+                android:title="🐕 Dogs" />
+            <item
+                android:id="@+id/nav_cats"
+                android:icon="@drawable/ic_cat"
+                android:title="🐱 Cats" />
+            <item
+                android:id="@+id/nav_other_pets"
+                android:icon="@drawable/ic_other_pets"
+                android:title="🦜 Other Pets" />
+        </menu>
+    </item>
+
+    <item android:title="🏠 Shelters">
+        <menu>
+            <item
+                android:id="@+id/nav_shelters"
+                android:icon="@drawable/ic_home"
+                android:title="Find Shelters" />
+            <item
+                android:id="@+id/nav_nearby_shelters"
+                android:icon="@drawable/ic_location"
+                android:title="📍 Nearby Shelters" />
+            <item
+                android:id="@+id/nav_register_shelter"
+                android:icon="@drawable/ic_add"
+                android:title="➕ Register Shelter" />
+        </menu>
+    </item>
+
+    <item android:title="📋 Services">
+        <menu>
+            <item
+                android:id="@+id/nav_rescue"
+                android:icon="@drawable/ic_rescue"
+                android:title="🚨 Rescue Request" />
+            <item
+                android:id="@+id/nav_my_requests"
+                android:icon="@drawable/ic_requests"
+                android:title="📄 My Requests" />
+            <item
+                android:id="@+id/nav_tips"
+                android:icon="@drawable/ic_tips"
+                android:title="💡 Pet Care Tips" />
+        </menu>
+    </item>
+
+    <item android:title="🤖 AI Features">
+        <menu>
+            <item
+                android:id="@+id/nav_ai_pet_identifier"
+                android:icon="@drawable/ic_camera"
+                android:title="🔍 AI Pet Identifier" />
+        </menu>
+    </item>
+
+    <item android:title="📞 Support">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_contact"
+                android:title="📞 Contact Us" />
+        </menu>
+    </item>
+
+    <item android:title="⚙️ Admin">
+        <menu>
+            <item
+                android:id="@+id/nav_admin_dashboard"
+                android:icon="@drawable/ic_admin"
+                android:title="🛠️ Admin Dashboard"
+                android:visible="false" />
+        </menu>
+    </item>
+
+    <item android:title="👤 Account">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_person"
+                android:title="My Profile" />
+            <item
+                android:id="@+id/nav_theme"
+                android:icon="@drawable/ic_theme"
+                android:title="🎨 Change Theme" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="🚪 Logout" />
+        </menu>
+    </item>
+
+</menu>

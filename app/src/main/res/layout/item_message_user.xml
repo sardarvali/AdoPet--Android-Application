@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:padding="8dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="64dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:elevation="2dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="280dp"
+            android:padding="12dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp"
+            tools:text="What kind of food should I give to my Golden Retriever?" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

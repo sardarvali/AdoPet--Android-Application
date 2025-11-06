@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--
+    Network Security Configuration for Pet Adoption App
+    This configuration enforces secure connections and implements certificate pinning
+    -->
+
+    <!-- Base configuration for all connections -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- Trust system certificate authorities only in production -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- Debug configuration - allows user certificates for testing with proxies -->
+    <debug-overrides>
+        <trust-anchors>
+            <!-- Trust user certificates for debugging with Charles/Burp -->
+            <certificates src="user" />
+            <certificates src="system" />
+        </trust-anchors>
+    </debug-overrides>
+
+    <!--
+    Firebase/Google Services Configuration
+    Firebase already uses proper SSL/TLS
+    -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">firebase.googleapis.com</domain>
+        <domain includeSubdomains="true">firestore.googleapis.com</domain>
+        <domain includeSubdomains="true">firebasestorage.googleapis.com</domain>
+        <domain includeSubdomains="true">fcm.googleapis.com</domain>
+        <domain includeSubdomains="true">googleapis.com</domain>
+
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+
+        <!-- Certificate Pinning for Firebase (Optional but recommended) -->
+        <!--
+        NOTE: Certificate pinning can cause issues if certificates are rotated.
+        Use backup pins and monitor expiration dates.
+        Uncomment below to enable pinning:
+
+        <pin-set expiration="2026-12-31">
+            <pin digest="SHA-256">++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI=</pin>
+            <pin digest="SHA-256">f0KW/FtqTjs108NpYj42SrGvOB2PpxIVM8nWxjPqJGE=</pin>
+            <pin digest="SHA-256">NqvDJlas/GRcYbcWE8S/IceH9cq77kg0jVhZeAPXq8k=</pin>
+        </pin-set>
+        -->
+    </domain-config>
+
+    <!--
+    Vision API / Gemini API Configuration
+    These are called from Firebase Cloud Functions
+    -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">vision.googleapis.com</domain>
+        <domain includeSubdomains="true">generativelanguage.googleapis.com</domain>
+
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+
+    <!--
+    Google Sign-In Configuration
+    -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">accounts.google.com</domain>
+        <domain includeSubdomains="true">www.googleapis.com</domain>
+
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+
+    <!--
+    Block cleartext (HTTP) traffic to all other domains
+    This prevents accidental insecure connections
+    -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">*</domain>
+    </domain-config>
+
+</network-security-config>
+

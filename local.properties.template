@@ -1,0 +1,25 @@
+# ================================
+# Local Properties Template
+# ================================
+# Copy this file to local.properties and fill in your values
+# NEVER commit local.properties to Git
+
+## This file must *NOT* be checked into Version Control Systems,
+# as it contains information specific to your local configuration.
+#
+# Location of the SDK. This is only used by Gradle.
+# For customization when using a Version Control System, please read the
+# header note.
+
+# Android SDK Location
+# Windows example: sdk.dir=C\:\\Users\\YourUsername\\AppData\\Local\\Android\\Sdk
+# Mac/Linux example: sdk.dir=/Users/YourUsername/Library/Android/sdk
+sdk.dir=YOUR_SDK_PATH_HERE
+
+# Google Maps API Key
+# Get your API key from: https://console.cloud.google.com/google/maps-apis
+GOOGLE_MAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY_HERE
+
+# Optional: Other API keys
+# Add any other API keys your project needs
+

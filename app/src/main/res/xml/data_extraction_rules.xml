@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Data extraction rules for Pet Adoption App (Android 12+)
+   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Include safe app data -->
+        <include domain="file" path="." />
+        <include domain="sharedpref" path="." />
+
+        <!-- Exclude sensitive data from cloud backups -->
+        <exclude domain="sharedpref" path="firebase_auth_cache.xml" />
+        <exclude domain="sharedpref" path="com.google.firebase.auth.internal.HeartBeatStore.xml" />
+        <exclude domain="sharedpref" path="api_key_cache.xml" />
+    </cloud-backup>
+
+    <device-transfer>
+        <!-- Allow basic app data transfer between devices -->
+        <include domain="file" path="." />
+        <include domain="sharedpref" path="." />
+
+        <!-- Exclude sensitive authentication data from device transfer -->
+        <exclude domain="sharedpref" path="firebase_auth_cache.xml" />
+        <exclude domain="sharedpref" path="com.google.firebase.auth.internal.HeartBeatStore.xml" />
+        <exclude domain="sharedpref" path="api_key_cache.xml" />
+    </device-transfer>
+</data-extraction-rules>
