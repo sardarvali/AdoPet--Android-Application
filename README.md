@@ -37,7 +37,6 @@ The **Pet Adoption App** is a full-featured Android application designed to stre
 - **Total Files**: 153+ Kotlin files
 - **Lines of Code**: ~30,000+
 - **Architecture**: Clean Architecture (MVVM + Repository Pattern)
-- **Code Quality**: 7/10
 - **Test Coverage**: Unit & Integration Tests
 - **Min SDK**: 24 (Android 7.0)
 - **Target SDK**: 34 (Android 14)
@@ -1456,19 +1455,6 @@ Special thanks to:
 - The Android and Firebase communities
 - Open source library maintainers
 - Pet shelters and rescue organizations for their invaluable feedback
-
----
-
-## 📊 Project Status
-
-**Current Version**: 1.0.0  
-**Status**: ✅ Active Development  
-**Last Updated**: November 6, 2025
-
-### Build Status
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
-![Coverage](https://img.shields.io/badge/coverage-40%25-yellow)
 
 ---
 
